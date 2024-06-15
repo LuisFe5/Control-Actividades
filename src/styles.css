@@ -11982,3 +11982,71 @@ th {
 .container-footer{
   padding-bottom: 60px;
 }
+
+/*Estilo del logeo*/
+.general {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #9FC5F8;
+}
+
+.container-loger {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-loger h2 {
+  text-align: center;
+}
+
+.container-loger form {
+  margin-bottom: 20px;
+}
+
+.container-loger label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container-loger input[type="text-loger"],
+.container-loger input[type="password-loger"],
+.container-loger input[type="submit-loger"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.container-loger input[type="submit-loger"] {
+  background-color: #6c8ebf;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container-loger input[type="submit-loger"]:hover {
+  background-color: #57769b;
+}
+
+.container-loger .forgot-password,
+.container-loger .create-account {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logo-loger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+}

@@ -4,10 +4,12 @@ import { ReservacionesComponent } from './components/reservaciones/reservaciones
 import { ContratoComponent } from './components/contrato/contrato.component';
 import { ReservanosComponent } from './components/reservanos/reservanos.component';
 import { ReglamentoComponent } from './components/reglamento/reglamento.component';
+import { IngresarComponent } from './components/ingresar/ingresar.component';
+
 const routes: Routes = [
   {
     path : '',
-    redirectTo : '/reservaciones' ,
+    redirectTo : '/ingresar' ,
     pathMatch : 'full'
   },
   {
@@ -27,6 +29,11 @@ const routes: Routes = [
   {
     path : 'reglamento',
     component :  ReglamentoComponent
+    
+  },
+  {
+    path : 'ingresar',
+    component :  IngresarComponent
     
   }
 
