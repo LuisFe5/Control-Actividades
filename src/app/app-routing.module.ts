@@ -5,6 +5,12 @@ import { ContratoComponent } from './components/contrato/contrato.component';
 import { ReservanosComponent } from './components/reservanos/reservanos.component';
 import { ReglamentoComponent } from './components/reglamento/reglamento.component';
 import { IngresarComponent } from './components/ingresar/ingresar.component';
+import { AdministrarReservasComponent } from './components/administrar-reservas/administrar-reservas.component';
+import { NuevoUsuarioComponent } from './components/nuevo-usuario/nuevo-usuario.component';
+import { OficiosReservasComponent } from './components/oficios-reservas/oficios-reservas.component';
+import { RecuperarContrasComponent } from './components/recuperar-contras/recuperar-contras.component';
+import { SuguerenciasQuejasComponent } from './components/suguerencias-quejas/suguerencias-quejas.component';
+
 
 const routes: Routes = [
   {
@@ -17,7 +23,7 @@ const routes: Routes = [
     component :  ReservacionesComponent
   },
   {
-    path : 'contratos',
+    path : 'contrato',
     component :  ContratoComponent
     
   },
@@ -35,7 +41,33 @@ const routes: Routes = [
     path : 'ingresar',
     component :  IngresarComponent
     
+  },
+  {
+    path : 'administrar-reservaciones',
+    component :  AdministrarReservasComponent
+    
+  },
+  {
+    path : 'nuevo-usuario',
+    component :  NuevoUsuarioComponent
+    
+  } ,
+  {
+    path : 'oficios-reservas',
+    component :  OficiosReservasComponent
+    
+  } ,
+  {
+    path : 'recuperar-contras',
+    component :  RecuperarContrasComponent
+    
+  } ,
+  {
+    path : 'sugerencias-quejas',
+    component :  SuguerenciasQuejasComponent
+    
   }
+  
 
 ];
 
