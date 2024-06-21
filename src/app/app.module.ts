@@ -15,6 +15,7 @@ import { AdministrarReservasComponent } from './components/administrar-reservas/
 import { ContratoComponent } from './components/contrato/contrato.component';
 import { ReservanosComponent } from './components/reservanos/reservanos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegistrosComponent } from './components/registros/registros.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AdministrarReservasComponent,
     ContratoComponent,
     ReservanosComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrosComponent
   ],
   imports: [
     BrowserModule,

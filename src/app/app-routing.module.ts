@@ -10,6 +10,7 @@ import { NuevoUsuarioComponent } from './components/nuevo-usuario/nuevo-usuario.
 import { OficiosReservasComponent } from './components/oficios-reservas/oficios-reservas.component';
 import { RecuperarContrasComponent } from './components/recuperar-contras/recuperar-contras.component';
 import { SuguerenciasQuejasComponent } from './components/suguerencias-quejas/suguerencias-quejas.component';
+import { RegistrosComponent } from './components/registros/registros.component';
 
 
 const routes: Routes = [
@@ -65,6 +66,11 @@ const routes: Routes = [
   {
     path : 'sugerencias-quejas',
     component :  SuguerenciasQuejasComponent
+    
+  },
+  {
+    path : 'registros',
+    component :  RegistrosComponent
     
   }
   
