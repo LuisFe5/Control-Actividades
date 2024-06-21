@@ -11984,7 +11984,7 @@ th {
   padding-bottom: 60px;
 }
 
-/*Estilo del logeo*/
+/* Estilo del logeo */
 .general {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11994,6 +11994,7 @@ th {
   align-items: center;
   height: 100vh;
   background-color: #9FC5F8;
+  position: relative; /* Añadido para posicionar correctamente la imagen */
 }
 
 .container-loger {
@@ -12046,12 +12047,28 @@ th {
 
 .logo-loger {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  width: 300px;
+  top: 20px; /* Ajusta la posición en la parte superior */
+  right: 20px; /* Ajusta la posición en la parte derecha */
+  width: 300px; /* Tamaño en escritorio */
   height: auto;
   z-index: 1;
 }
+
+@media (max-width: 902px) {
+  .logo-loger {
+    top: 20px; /* Ajusta la posición en la parte superior */
+    left: 20px; /* Ajusta la posición en la parte izquierda */
+    width: 80px; /* Tamaño en dispositivos móviles */
+  }
+  
+}
+@media (max-height: 600px) {
+  .logo-loger {
+    width: 60px; /* Tamaño en dispositivos más pequeños */
+  }
+}
+
+/*Estilo del*/
 
 .custom-footer {
   background-color: rgba(128, 128, 128, 0.8); /* Gris con 80% de opacidad */
@@ -12091,6 +12108,8 @@ th {
   margin-right: 5px; /* Espacio para los iconos */
 }
 
-
+.letter-header{
+text-align: left;
+}
 
 
