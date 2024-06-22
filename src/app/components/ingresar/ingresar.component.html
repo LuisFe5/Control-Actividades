@@ -1,18 +1,17 @@
-<app-navigation></app-navigation>
-<div class="container">
 <div class="general">
-    <div class="container-loger">
+    <img class="logo-loger img-fluid order-first" src="https://www.utng.edu.mx/assets/principal/carreras/mapasC/logo-utng.png" alt="UTNG Logo">
+    <div class="container-loger p-5">
         <h2>Iniciar sesión</h2>
         <form action="#">
             <label for="usuario">Usuario</label>
             <input type="text-loger" id="usuario" name="usuario" required>
             <label for="contrasena-loger">Contraseña</label>
-            <input type="password-loger" id="contrasena" name="contrasena" required>
-            <input type="submit-loger" value="Iniciar sesión" routerLink="/reservaciones" routerLinkActive="active">
+            <input class="password-loger" type="password" id="contrasena" name="contrasena" required>
+            <input class="text-center h5 " type="submit-loger" value="Iniciar sesión" routerLink="/reglamento" routerLinkActive="active">
         </form>
-        <p class="forgot-password-loger"><a href="#">¿Olvidaste tu contraseña?</a></p>
-        <p class="create-account-loger"><a href="#">Crear cuenta nueva</a></p>
+        <div class="text-center">
+            <p class="forgot-password-loger"><a href="/recuperar-contras">¿Olvidaste tu contraseña?</a></p>
+            <p class="create-account-loger"><a href="/nuevo-usuario">Crear cuenta nueva</a></p>
+        </div>
     </div>
-    <img class="logo-loger" src="https://www.utng.edu.mx/assets/principal/carreras/mapasC/logo-utng.png" alt="UTNG Logo">
-</div>
 </div>

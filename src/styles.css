@@ -90,6 +90,7 @@
   --bs-body-color: #55595c;
   --bs-body-color-rgb: 85, 89, 92;
   --bs-body-bg: #fff;
+  --bs-body-bg-full:#31688C;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -210,7 +211,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-body-bg-full);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -11983,7 +11984,7 @@ th {
   padding-bottom: 60px;
 }
 
-/*Estilo del logeo*/
+/* Estilo del logeo */
 .general {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11993,10 +11994,11 @@ th {
   align-items: center;
   height: 100vh;
   background-color: #9FC5F8;
+  position: relative; /* Añadido para posicionar correctamente la imagen */
 }
 
 .container-loger {
-  width: 300px;
+  width: 500px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -12017,7 +12019,7 @@ th {
 }
 
 .container-loger input[type="text-loger"],
-.container-loger input[type="password-loger"],
+.container-loger input[class="password-loger"],
 .container-loger input[type="submit-loger"] {
   width: 100%;
   padding: 10px;
@@ -12030,6 +12032,7 @@ th {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .container-loger input[type="submit-loger"]:hover {
@@ -12044,9 +12047,69 @@ th {
 
 .logo-loger {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 150px;
+  top: 20px; /* Ajusta la posición en la parte superior */
+  right: 20px; /* Ajusta la posición en la parte derecha */
+  width: 300px; /* Tamaño en escritorio */
   height: auto;
   z-index: 1;
 }
+
+@media (max-width: 902px) {
+  .logo-loger {
+    top: 20px; /* Ajusta la posición en la parte superior */
+    left: 20px; /* Ajusta la posición en la parte izquierda */
+    width: 80px; /* Tamaño en dispositivos móviles */
+  }
+  
+}
+@media (max-height: 600px) {
+  .logo-loger {
+    width: 60px; /* Tamaño en dispositivos más pequeños */
+  }
+}
+
+/*Estilo del*/
+
+.custom-footer {
+  background-color: rgba(128, 128, 128, 0.8); /* Gris con 80% de opacidad */
+  color: white; /* Texto blanco para legibilidad */
+  padding: 20px 0;
+}
+
+.custom-footer a {
+  color: white; /* Asegura que los enlaces sean blancos */
+}
+
+.custom-footer a:hover {
+  color: #d1d1d1; /* Color más claro en el hover para enlaces */
+}
+
+.custom-footer h3, .custom-footer h5 {
+  margin-bottom: 15px;
+}
+
+.custom-footer img.custom-logo {
+  background-color: white; /* Fondo blanco para la imagen */
+  padding: 10px; /* Espacio alrededor de la imagen */
+  border-radius: 5px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para que se vea levantada */
+  margin-bottom: 15px;
+}
+
+.custom-footer p {
+  margin: 0;
+}
+
+.custom-footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+
+.custom-footer .list-unstyled li i {
+  margin-right: 5px; /* Espacio para los iconos */
+}
+
+.letter-header{
+text-align: left;
+}
+
+
