@@ -1,0 +1,92 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.campo {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+.campo:nth-child(2),
+.campo:nth-child(3) {
+    margin-left: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.boton {
+    width: 100%;
+    padding: 10px;
+    background-color: #9FC5F8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #6B93D6;
+}
+
+.grupo-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grupo-campos .campo {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 10px;
+}
+
+.campo-label-derecha {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .grupo-campos .campo {
+        flex-basis: 100%;
+    }
+}
